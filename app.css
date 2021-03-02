@@ -1,0 +1,72 @@
+@font-face {
+  font-family: ProximaNova;
+  src: url(./fonts/ProximaNovaRegular.otf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: ProximaNova;
+  src: url(./fonts/ProximaNovaBold.otf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url(./fonts/SourceSansPro-Regular.ttf);
+  font-weight: normal;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url(./fonts/SourceSansPro-Bold.ttf);
+  font-weight: bold;
+}
+
+
+.topbar-rightside.active {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+#main-menu.active {
+  transform: translateX(0);
+  visibility: visible;
+}
+#main-menu.active .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f8f8f8;
+  width: 270px;
+  height: 100vh;
+  padding: 60px 20px;
+  margin-top: -20px;
+  z-index: 1000;
+}
+#main-menu.active.dropactive {
+  padding: 0 10px 20px 20px;
+}
+
+#main-menu.active .dropdown-content.active {
+  display: block;
+}
+#topbar .topbar-rightside.activebar {
+  z-index: 998;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.return-btn:hover .dropdown-content {
+  display: none;
+}
+
+.burger-icon.active {
+  display: none;
+}
+.close-icon.active {
+  display: inline-block;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  cursor: pointer;
+}
